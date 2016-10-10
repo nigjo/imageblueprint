@@ -1,0 +1,14 @@
+name: ImageBlueprint
+version: ${majorversion}-${state}
+description: Image Blueprint let you generate building blueprints from pixel images.
+author: nigjo
+prefix: IBP
+main: de.nigjo.mc.imageblueprint.ImageBlueprintPlugin
+depend: [WorldEdit]
+#softdepend: [Vault]
+commands:
+    imageblueprint:
+        aliases:
+            - bp
+            - ibp
+        description: Control command for Image Blueprint
