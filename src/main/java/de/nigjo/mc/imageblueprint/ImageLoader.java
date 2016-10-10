@@ -32,9 +32,10 @@ public class ImageLoader {
   private ImageLoader() {
   }
 
-  public static BluePrint loadImage(String filename) throws FileNotFoundException,
-      IOException {
+  public static BluePrint loadImage(String filekey)
+      throws FileNotFoundException, IOException {
 
+    String filename = "blueprints/" + filekey + ".png";
     File canonical = getLoadFilename(filename);
     BufferedImage image = ImageIO.read(canonical);
 
